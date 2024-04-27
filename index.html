@@ -2,31 +2,78 @@
 <html>
     <head>
         <title>Home Page</title>
+        <link rel="stylesheet" href="style_sheet/bootstrap.min.css"/>
         <link rel="stylesheet" href="style_sheet/site.css" />
     </head>
     <div id="header">
-        <div id="banner">
+        <div id="banner" class="bg-secondary text-white text-center">
             <p>Random website notification</p>
         </div>
+        <nav class="navbar navbar-expand-lg bg-body-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Animal Preservation</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link" href="about_us.html">About US</a>
+                  <a class="nav-link" href="contact_us.html">Contact US</a>
+              </div>
+            </div>
+          </nav>
         <div id="nav">
              <!-- anchor tags used for internal navigation-->
-             <a href="index.html">Home</a>
-             <a href="about_us.html">About Us</a>
-             <a href="contact_us.html">Contact Us</a>
+            
         </div>
         
     </div>
     
-    <div id="main">
+    <div id="main" class="container">
           <!-- Examples of heading tags -->
 
           <h1>Safari</h1>
           <hr/>
-          <h2 class="DifferentLookingText">Heading 2</h2>
-          <h3>Heading 3</h3>
-          <h4>Heading 4</h4>
-          <h5>Heading 5</h5>
-          <h6>Heading 6</h6>
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/lion.jpg" class="d-block w-100" alt="lion">
+              </div>
+              <div class="carousel-item">
+                <img src="images/hyena.jpg" class="d-block w-100" alt="hyena">
+              </div>
+              <div class="carousel-item">
+                <img src="images/wild dog.jpg" class="d-block w-100" alt="wild dog">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <br/>
+          <br/>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, repudiandae! Quisquam fugiat atque dicta explicabo aperiam, recusandae corrupti placeat pariatur minima, vitae, corporis quam magnam rem repudiandae alias quaerat magni.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id suscipit illum at harum nulla temporibus commodi provident optio voluptatibus quo veritatis tempora, aut distinctio aliquam autem animi, corrupti iure modi.</p>
+          <br/>
+          <br/>
+          <div class="row">
+            <div class="col">...
+            </div>
+            <div class="col">...
+            </div>
+          </div>
 
         <!-- Sampli ifram embedding Youtube video -->
         <h2>Safari Success story</h2>
@@ -49,18 +96,43 @@
         <br/>
         <br/>
         <br/>
-        <button>Hide P tags - Jquery</button>
-        <button onclick="hidePTags()">Hide P tags - Javascript</button>
-
-       
+        <div class="text-center">
+            <button class="btn btn-danger btn-lg" id="jqueryBtn">Hide P tags - Jquery</button>
+            <button class="btn btn-outline-danger btn-lg" onclick="hidePTags()">Hide P tags - Javascript</button>
+        </div>
     </div>
+
+    <footer class="py-3 mt-4 bg-secondary" data-bs-theme="dark">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="about_us.html" class="nav-link px-2 text-body-secondary">About US</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact_us.html" class="nav-link px-2 text-body-secondary">Contact US</a>
+            </li>
+        </ul>
+        <p class="text-center text-body-secondary">&copy;
+            <a href="http://www.shamoyshea.com" target="_blank" class="nav-link">
+                Shamoy Shea Website
+            </a>
+            </a>
+
+        </p>
+    </footer>
+
+
+
     <div id="footer">
         <br>
         <a href="Https://www.amazon.com">Amazon</a>
         <a href="https://www.ebay.com" target="_blank">ebay</a>
     </div>
-    <script src="javascripts/jquery.min.js"></script>
-    <script src="javascripts/site.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/site.js"></script>
     <script>
        
 
